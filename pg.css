@@ -903,7 +903,8 @@ input {
 	padding:12px 15px 0 15px;
 	box-sizing: border-box;
 	background:#EEEEEE;
-	position:relative;
+    position:relative;
+    overflow-y: auto;
 }
 .paytm-container .content{
     width:100%;
