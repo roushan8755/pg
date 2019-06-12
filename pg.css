@@ -959,6 +959,18 @@ input {
     align-items: center;
     padding-bottom: 10px;
 } 
+.paytmsecure .key{
+    width: 30px;
+    height: 20px;
+    display: inline-block;
+    background:url(/pg/img/image/checkout-sprite.png) top left no-repeat;
+    background-position: -53px -41px;
+
+}
+.paytmsecure .statement{
+	padding-top:5px;
+	font-size:14px;
+}
 .paytm-container .secureBalance{
     width: 100%;
     box-sizing: border-box;
@@ -971,6 +983,18 @@ input {
     align-items: center;
     padding-bottom: 10px;
 } 
+.secureBalance .key{
+    width: 30px;
+    height: 20px;
+    display: inline-block;
+    background:url(/pg/img/image/checkout-sprite.png) top left no-repeat;
+    background-position: -53px -41px;
+
+}
+.secureBalance .statement{
+	padding-top:5px;
+	font-size:14px;
+}
 .paytm-container .secureother{
     width: 100%;
     box-sizing: border-box;
@@ -982,7 +1006,20 @@ input {
     justify-content: center;
     align-items: center;
     padding-bottom: 10px;
-} 
+}
+
+.secureother .key{
+    width: 30px;
+    height: 20px;
+    display: inline-block;
+    background:url(/pg/img/image/checkout-sprite.png) top left no-repeat;
+    background-position: -53px -41px;
+
+}
+.secureother .statement{
+	padding-top:5px;
+	font-size:14px;
+}
 .paytm-input #label{
 	position:absolute;
 	bottom:5px;
