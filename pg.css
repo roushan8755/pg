@@ -923,6 +923,14 @@ input {
 }
 .paytm-container .content{
     width:100%;
+    padding:15px 25px 45px 25px;
+    box-sizing: border-box;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    background:#fff;
+    border-radius:4px;
+}
+.paytm-container .contents{
+    width:100%;
     padding:15px 25px 20px 25px;
     box-sizing: border-box;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
