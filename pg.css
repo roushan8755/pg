@@ -269,7 +269,8 @@ html{
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-	display:none;
+    display:none;
+    background:#eee;
 }
 .credit-container{
 	width:100%;
@@ -480,7 +481,7 @@ html{
     /* bottom:15px; */
     /* left:0; */
     width: 100%;
-    margin-top:200px;
+    margin-top:185px;
     box-sizing: border-box;
     padding-bottom: 10px;
     justify-content: center;
@@ -530,6 +531,7 @@ html{
     height: 100%;
     box-sizing: border-box;
     display:none;
+    background:#EEE;
 }
 
 .nb-container{
@@ -694,7 +696,7 @@ html{
     transform: translate3d(0,0,0);
 }
 .ty-slide-wrapper {
-    height: 100vh;
+    height: 100%;
     overflow: auto;
     background: #eee;
     padding-top: 50px;
@@ -750,7 +752,7 @@ html{
 }
 .bank-container{
 	width:100%;
-	height:calc(100% - 110px);
+	height:100%;
 	background:#EEEEEE;
 	padding: 12px 20px 100px 20px;
 	box-sizing:border-box;
@@ -880,7 +882,7 @@ input {
     /* position:absolute; */
     /* bottom:15px; */
     /* left:0; */
-    margin-top:160px;
+    margin-top:145px;
     justify-content: center;
     align-items: center;
     padding-bottom: 10px;
@@ -909,6 +911,7 @@ input {
     height: 100%;
     box-sizing: border-box;
     display:none;
+    background:#EEE;
 }
 .paytm-container{
 	width:100%;
@@ -951,7 +954,7 @@ input {
     /* position:absolute; */
     /* bottom:15px; */
     /* left:0; */
-    margin-top: 315px;
+    margin-top: 240px;
     justify-content: center;
     align-items: center;
     padding-bottom: 10px;
