@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Payment options</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='pg.css'>
+</head>
+<body>    
+    <div id ="main-page">
+        <header >
+                 <div class="pg-options-header">
+                        <div class="back-arrow">
+                            <div class="arrow_wrapper">
+                               <div class="arrow1"></div>
+                               <div class="arrow2"></div>
+                               <div class="arrow3"></div>
+                            </div>
+                        </div>
+                        <div class="pg-options-title">
+                              <div>payment options</div>
+                        </div>
+                 </div>
+      </header> 
+         <div class="pg-option-container"></div>
+       </div>
+</div>   
+       <!-- credit card -->
+       <div id = "credit_wrapper">
+        <header>
+              <div class="pg-options-header">
+                   <div class="back-arrow" id="creditBack">
+                      <div class="arrow_wrapper">
+                       <div class="arrow1"></div>
+                       <div class="arrow2"></div>
+                       <div class="arrow3"></div>
+                   </div>
+                  </div>
+                   <div class="pg-options-title">
+                      <div>Debit / Credit card</div>
+                   </div>
+              </div>
+      </header> 
+      <div class="credit-container">
+            <div class="credit-credential">
+                 <div class="input-field">
+                     <input type="number" class="inp" name="cardNo" id="card_no" onfocus ="Handlefocus(event);" onblur="Handleblur(event)"onkeypress="Handlekey(event);"  tabindex="1"  />
+                        <label  id="label">card no</label>
+                            <span id="errormsg" class="erstar" style="color:red"></span>
+                 </div> 
+                            <span id ="cc_spritelogo" class="credit-sprite"></span>
+               <div class="input-field">
+                    <input type="text" class="inp" name="CardName" id="name" autocomplete="off" onfocus ="Handlefocus(event);" onblur="Handleblur(event);" onkeypress="Handlekey(event);"  tabindex="2"/>
+                        <label id="label">Name of card holder</label>
+                            <span id="errormsg" class="erstar" style="color:red"></span>
+               </div>
+                <div class="input-fields">
+                   <div class="monthfield">
+                      <input class= "input-fields"  type="number" name="month" autocomplete="off" id="mm" onfocus ="Handlefocus(event);" onblur="Handleblur(event);" tabindex="3" onkeypress="Handlekey(event);" />
+                            <label id ="label">MM</label>
+                               <span id="errormsg" class="erstar" style="color:red"></span>
+                   </div>    
+                   <div class="yearfield">
+                       <input class= "input-fields" type="number" name="year" autocomplete="off" id="yyyy" onfocus= "Handlefocus(event)" onblur="Handleblur(event);" tabindex="4" onkeypress="Handlekey(event);" />
+                           <label id ="label">YYYY</label>
+                              <span id="errormsg" class="erstar"style="color:red"></span>
+                   </div>   
+                   <div class="cvvfield">
+                       <input class= "input-fields" type="password" name="cvv" autocomplete="off" id="cvvf" onfocus=" Handlefocus(event);" onblur="Handleblur(event);" tabindex="5" onkeypress="Handlekey(event);"/>
+                            <label id ="label">CVV</label>
+                            <span class="cvv-sprite"></span></input>
+                            <span id="errormsg" class="erstar" style="color:red">
+                  </div>
+              </div>    
+          </div>
+             <div class="secure">
+                              <div class="key"></div>
+                              <div class="statement">Secure 256-bit SSL encrypted payment</div>
+                         </div>
+          </div>
+          <button class="proceed-to" id="ccpaybtn">proceed to pay</button>
+      </div>
+      <!--netbankhtml  -->
+      <div id ="netBank"> 
+          <header>
+                <div class="pg-options-header">
+                     <div class="back-arrow" id="netBack">
+                      <div class="arrow_wrapper">
+                         <div class="arrow1"></div>
+                         <div class="arrow2"></div>
+                         <div class="arrow3"></div>
+                     </div>
+                   </div>
+                     <div class="pg-options-title">
+                        <div>Net banking</div>
+                     </div>
+                </div>
+          </header>          
+            <div class="nb-container"> 
+                    <div class="popular-nb"></div>
+                    <div class="another-bank" >
+                            <div class="another-bank-caption" id="anotherBank">
+                            Or choose another bank     
+                            </div> 
+                            <span class="down-arrow">
+                                 <div class="arrow1"></div>
+                                 <div class="arrow2"></div>
+                            </span>
+                         </div>
+                         <div class="ty-slide active">
+                                <div class="ty-slide-inner">
+                                  <div class="ty-slide-wrapper">
+                                     <div class="ty-slide-head">
+                                        <div class="ty-slide-cross"> &#x2715;</div>
+                                        <div class="inp-field">
+                                            <input class="inp" type="text" placeholder="Search your bank" id="banksearch">
+                                        </div>
+                                     </div>
+                                     <ul class="bank-container"></ul>
+
+                                 </div> 
+                            </div>
+                      </div>  
+                        <div class="secure">
+                                <div class="key"></div>
+                                <div class="statement">Secure 256-bit SSL encrypted payment</div>
+                           </div>
+                    </div>
+         <button class="proceed-to" id ="netBankproceed">proceed to pay</button>
+    </div> 
+    <!-- wallets -->
+    <div id ="other_wallets">
+            <header>
+                 <div class="pg-options-header">
+                      <div class="back-arrow" id="walletshow">
+                       <div class="arrow_wrapper">
+                          <div class="arrow1"></div>
+                          <div class="arrow2"></div>
+                          <div class="arrow3"></div>
+                      </div>
+                    </div>
+                      <div class="pg-options-title">
+                         <div> PayTm Wallet</div>
+                      </div>
+                 </div>
+           </header>
+           <div class="paytm-container" id="pc">
+               <div class="content">
+               <div class="paytm-input" id="inp">
+                  <input class="paytm" type="number" id="pay" name="PAYTM" onfocus="Handlefocus(event);" onblur="Handleblur(event);" onkeypress="Handlekey(event);"autocomplete="off">
+                  <label id ="label">Enter mobile no</label>
+                  <span id="errormsg" class="erstar" style="color:red"></span>
+               </div>
+               <div class="paytm-link">
+                   <a href ="https://paytm.com/">pay at PayTM website</a>
+               </div>
+               </div>
+               <div class="secure">
+                     <div class="key"></div>
+                     <div class="statement">Secure 256-bit SSL encrypted payment</div>
+                </div>
+           </div>
+           <button class="proceed-to" id ="topaytm">GENERATE OTP</button>  
+   </div> 
+   <div id = "PaytmOTP">
+         <header>
+               <div class="pg-options-header">
+                    <div class="back-arrow" id="backTopaytmpage">
+                     <div class="arrow_wrapper">
+                        <div class="arrow1"></div>
+                        <div class="arrow2"></div>
+                        <div class="arrow3"></div>
+                    </div>
+                  </div>
+                    <div class="pg-options-title">
+                       <div> PayTm Wallet</div>
+                    </div>
+               </div>
+         </header>
+         <div class="paytm-container" id="pc">
+             <div class="content">
+             <div class="paytm-input" id ="inp">
+                <input class="paytm" type="password" id="otp" name="PAYTMOTP"  onfocus="Handlefocus(event);" onblur="Handleblur(event);" onkeypress="Handlekey(event);" autocomplete="off">
+                <label id ="label">Enter otp</label>
+                <label id ="resend">Resend</label>
+                <span id="errormsg" class="erstar" style="color:red"></span>
+             </div>
+             <div class="paytm-otp">
+                 <P>OTP send to  </P>
+                 <span id = "mobnoShow"></span>
+                 <span class="edit" id ="EDIT" style="color:#007bb9;">Edit</span>
+             </div>
+             </div>
+             <div class="secure">
+                  <div class="key"></div>
+                  <div class="statement">Secure 256-bit SSL encrypted payment</div>
+             </div>
+         </div>
+         <button class="proceed-to" id ="toOTP">SUBMIT OTP</button>  
+   </div>
+     <div id="walletShowBalance">
+         <header>
+               <div class="pg-options-header">
+                    <div class="back-arrow" id="walletBalanceBack">
+                     <div class="arrow_wrapper">
+                        <div class="arrow1"></div>
+                        <div class="arrow2"></div>
+                        <div class="arrow3"></div>
+                    </div>
+                  </div>
+                    <div class="pg-options-title">
+                       <div> PayTm Wallet</div>
+                    </div>
+               </div>
+         </header>
+         <div class="paytm-container">
+             <div class="balance-container">
+                <div class="Balance-content">
+                    <div class="showPayTMBalance">
+                        &#8377;1200
+                    </div>
+                    <div class="balanceStatement">
+                       Your PayTM wallet balance
+                    </div>
+                </div>
+
+                <div class="Balance-content">
+                     <div class="PayBalance">
+                         &#8377;824
+                     </div>
+                     <div class="balanceStatement">
+                        Total amount to be made for this booking
+                     </div>
+                 </div>
+             </div>
+             <div class="secure">
+                  <div class="key"></div>
+                  <div class="statement">Secure 256-bit SSL encrypted payment</div>
+             </div>
+         </div>
+         <button class="proceed-to" id ="confirm">CONFIRM</button>  
+   </div>
+   <div id ="PayOtherWrapper">
+         <header>
+               <div class="pg-options-header">
+                    <div class="back-arrow" id="payotherBack">
+                     <div class="arrow_wrapper">
+                        <div class="arrow1"></div>
+                        <div class="arrow2"></div>
+                        <div class="arrow3"></div>
+                    </div>
+                  </div>
+                    <div class="pg-options-title">
+                       <div> PayTm Wallet</div>
+                    </div>
+               </div>
+         </header>
+         <div class="paytm-container">
+             <div class="insufficient-balance-container">
+                <div class="insufficient-Balance-content">
+                    <div class="showPayTMBalance">
+                        &#8377;1200
+                    </div>
+                    <div class="balanceStatement">
+                       Your PayTM wallet balance
+                    </div>
+                </div>
+                <div class="insufficient-Balance-content">
+                     <div class="PayBalance">
+                         &#8377;824
+                     </div>
+                     <div class="balanceStatement">
+                        Total amount to be made for this booking 
+                     </div>
+                 </div> 
+             </div>
+             <div class="insufficient-Balance-contentShow">
+                  <div class="leftpart">
+                     <img src="img/image/insufficiant.png" width="30px"/>
+                  </div>
+                  <div class="rightpart">
+                     Insufficient balance
+                  </div>
+              </div>   
+             <div class="secure">
+                  <div class="key"></div>
+                  <div class="statement">Secure 256-bit SSL encrypted payment</div>
+             </div>
+         </div>
+         <button class="proceed-to" id ="payOtherOptionsbutton">PAY &#8377;   USING OTHER OPTIONS</button> 
+   </div>  
+          <script src='pg.js'></script>      
+</body>
+</html>
