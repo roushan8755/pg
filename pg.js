@@ -1028,7 +1028,6 @@ const defaultFormat = /(\d{1,4})/g;
               break;
         
           case "cvv":
-              
                         let val_cvv = event.target.value;
                             if(val_cvv.length < 3){
                                 parent.children.errormsg.innerHTML = "3 digit";
@@ -1049,7 +1048,8 @@ const defaultFormat = /(\d{1,4})/g;
                                 parent.children.errormsg.innerHTML = "";
                                 parent.children.cvv.style.borderBottom="2px solid #ddd";
                                 cvv_val_flag = true;
-                            }    
+                            } 
+                            break;   
                     case "PAYTM":
                              let mob_Enterval = document.getElementById('pay').value;
                              if(mob_Enterval.length < 10){
