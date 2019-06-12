@@ -793,6 +793,7 @@ html{
     display: flex;
     display: inline-block;
     box-sizing: border-box;
+    width: calc(100% - 20px);
 }
 .bankname div{
 	margin:0;
