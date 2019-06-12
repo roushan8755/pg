@@ -959,6 +959,18 @@ input {
     align-items: center;
     padding-bottom: 10px;
 } 
+.paytm-container .secureBalance{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    /* position:absolute; */
+    /* bottom:15px; */
+    /* left:0; */
+    margin-top: 200px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+} 
 .paytm-container .secureother{
     width: 100%;
     box-sizing: border-box;
