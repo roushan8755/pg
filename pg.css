@@ -947,14 +947,14 @@ input {
     outline:none;
     /* height:40px; */
 } 
-.paytm-container .secure{
+.paytm-container .paytmsecure{
     width: 100%;
     box-sizing: border-box;
     display: flex;
     /* position:absolute; */
     /* bottom:15px; */
     /* left:0; */
-    margin-top: 200px;
+    margin-top: 220px;
     justify-content: center;
     align-items: center;
     padding-bottom: 10px;
