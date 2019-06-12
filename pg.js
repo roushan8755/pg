@@ -75,7 +75,7 @@ var rcvjson =
           },
           "popular": {
             "axis_nb": "Axis Bank",
-            "icici_nb": "ICICC Bank",
+            "icici_nb": "ICICI Bank",
             "sbi_nb": "State Bank of India",
             "canara_nb": "Canara Bank",
             "idbi_nb": "IDBI Bank",
