@@ -45,29 +45,29 @@
       <div class="credit-container">
             <div class="credit-credential">
                  <div class="input-field">
-                     <input type="tel" class="inp" name="cardNo" id="card_no" onfocus ="Handlefocus(event);" onblur="Handleblur(event)"onchange="Handlekey(event);"  tabindex="1" maxlength="20" />
+                     <input type="tel" class="inp" name="cardNo" id="card_no" onfocus ="Handlefocus(event);" onblur="Handleblur(event)"onkeypress|onchange="Handlekey(event);"  tabindex="1" maxlength="20" />
                         <label  id="label">card no</label>
                             <span id="errormsg" class="erstar" style="color:red"></span>
                  </div> 
                             <span id ="cc_spritelogo" class="credit-sprite"></span>
                <div class="input-field">
-                    <input type="text" class="inp" name="CardName" id="name" autocomplete="off" onfocus ="Handlefocus(event);" onblur="Handleblur(event);" onchange="Handlekey(event);"  tabindex="2"/>
+                    <input type="text" class="inp" name="CardName" id="name" autocomplete="off" onfocus ="Handlefocus(event);" onblur="Handleblur(event);" onkeypress|onchange="Handlekey(event);"  tabindex="2"/>
                         <label id="label">Name of card holder</label>
                             <span id="errormsg" class="erstar" style="color:red"></span>
                </div>
                 <div class="input-fields">
                    <div class="monthfield">
-                      <input class= "input-fields"  type="tel" name="month"  autocomplete="off" id="mm" onfocus ="Handlefocus(event);" onblur="Handleblur(event);" tabindex="3" onchange="Handlekey(event);"maxlength="2" />
+                      <input class= "input-fields"  type="tel" name="month"  autocomplete="off" id="mm" onfocus ="Handlefocus(event);" onblur="Handleblur(event);" tabindex="3" onkeypress|onchange="Handlekey(event);"maxlength="2" />
                             <label id ="label">MM</label>
                                <span id="errormsg" class="erstar" style="color:red"></span>
                    </div>    
                    <div class="yearfield">
-                       <input class= "input-fields" type="tel" name="year" autocomplete="off" id="yyyy" onfocus= "Handlefocus(event)" onblur="Handleblur(event);" tabindex="4" onchange="Handlekey(event);"maxlength="4" />
+                       <input class= "input-fields" type="tel" name="year" autocomplete="off" id="yyyy" onfocus= "Handlefocus(event)" onblur="Handleblur(event);" tabindex="4" onkeypress|onchange="Handlekey(event);"maxlength="4" />
                            <label id ="label">YYYY</label>
                               <span id="errormsg" class="erstar"style="color:red"></span>
                    </div>   
                    <div class="cvvfield">
-                       <input class= "input-fields" type="password" name="cvv" autocomplete="off" id="cvvf" onfocus=" Handlefocus(event);" onblur="Handleblur(event);" tabindex="5" onchange="Handlekey(event);" maxlength="3"/>
+                       <input class= "input-fields" type="password" name="cvv" autocomplete="off" id="cvvf" onfocus=" Handlefocus(event);" onblur="Handleblur(event);" tabindex="5" onkeypress|onchange="Handlekey(event);" maxlength="3"/>
                             <label id ="label">CVV</label>
                             <span class="cvv-sprite"></span></input>
                             <span id="errormsg" class="erstar" style="color:red">
@@ -148,7 +148,7 @@
            <div class="paytm-container" id="pc">
                <div class="content">
                <div class="paytm-input" id="inp">
-                  <input class="paytm" type="tel" id="pay" name="PAYTM"  onfocus="Handlefocus(event);" onblur="Handleblur(event);" onchange="Handlekey(event);"autocomplete="off" maxlength="10">
+                  <input class="paytm" type="tel" id="pay" name="PAYTM"  onfocus="Handlefocus(event);" onblur="Handleblur(event);" onkeypress|onchange="Handlekey(event);"autocomplete="off" maxlength="10">
                   <label id ="label">Enter mobile no</label>
                   <span id="errormsg" class="erstar" style="color:red"></span>
                </div>
@@ -181,7 +181,7 @@
          <div class="paytm-container" id="pc">
              <div class="contents">
              <div class="paytm-input" id ="inp">
-                <input class="paytm" type="password" id="otp" name="PAYTMOTP"  onfocus="Handlefocus(event);" onblur="Handleblur(event);" onchange="Handlekey(event);" autocomplete="off" mxlength="6">
+                <input class="paytm" type="password" id="otp" name="PAYTMOTP"  onfocus="Handlefocus(event);" onblur="Handleblur(event);" onkeypress|onchange="Handlekey(event);" autocomplete="off" mxlength="6">
                 <label id ="label">Enter otp</label>
                 <label id ="resend">Resend</label>
                 <span id="errormsg" class="erstar" style="color:red"></span>

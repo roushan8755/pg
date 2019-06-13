@@ -522,9 +522,9 @@ const defaultFormat = /(\d{1,4})/g;
     function Handlekey(event){
       let name = event.target.name;
       // console.log(name);
-      let parent = event.target.parentElement;
+      // let parent = event.target.parentElement;
       let key_val = event.key;
-      let key_val_length = event.target.value.length;
+      // let key_val_length = event.target.value.length;
       let digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
       let namepattern = new RegExp( "[a-zA-Z ]");
   
