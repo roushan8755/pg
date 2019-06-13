@@ -529,7 +529,7 @@ const defaultFormat = /(\d{1,4})/g;
       switch(name){
           case "cardNo":
            let card_no = document.getElementById("card_no").value;
-            if((key_val % 1)=== 0){  
+          if((card_no % 1)=== 0){  
               if(card_no.length >= 19){
                   event.preventDefault();
                   return false;
