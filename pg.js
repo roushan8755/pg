@@ -524,16 +524,16 @@ const defaultFormat = /(\d{1,4})/g;
       let key_val = event.key;
       // let key_val = event.which;
       // console.log(key_val);
-      let digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+      // let digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
       let namepattern = new RegExp( "[a-zA-Z ]");
       switch(name){
           case "cardNo":
-           let card_no = document.getElementById("card_no").value; 
-              if(card_no.length >= 19){
+           let card_no_val = document.getElementById("card_no").value; 
+              if( card_no_val.length >= 19){
                   event.preventDefault();
                   return false;
               }
-              if(!(key_val in digits)){
+              if(!( card_no_val % 1)=== 0){
                   event.preventDefault();
                   return false;
               } 
@@ -545,34 +545,34 @@ const defaultFormat = /(\d{1,4})/g;
               }
               break;
           case "month":
-              let card_mon = document.getElementById("mm").value;
-              if(card_mon.length >= 2){
+              let card_mon_val = document.getElementById("mm").value;
+              if(card_mon_val.length >= 2){
                   event.preventDefault();
                   return false;
               }
-              if(!(key_val in digits)){
+              if(!(card_mon_val % 1)=== 0){
                   event.preventDefault();
                   return false;
               }
               break;
           case "year":
-              let card_year = document.getElementById("yyyy").value;
-              if(card_year.length >= 4){
+              let card_year_val = document.getElementById("yyyy").value;
+              if(card_year_val.length >= 4){
                   event.preventDefault();
                   return false;
               }
-              if(!(key_val in digits)){
+              if(!(card_year_val % 1)=== 0){
                   event.preventDefault();
                   return false;
               }
               break;
           case "cvv":
-              let card_cvv = document.getElementById("cvvf").value;
-              if(card_cvv.length >= 3){
+              let card_cvv_val = document.getElementById("cvvf").value;
+              if(card_cvv_val.length >= 3){
                   event.preventDefault();
                   return false;
               }
-              if(!(key_val in digits)){
+              if(!(card_cvv_val % 1)=== 0){
                   event.preventDefault();
                   return false;
               }
@@ -583,7 +583,7 @@ const defaultFormat = /(\d{1,4})/g;
               event.preventDefault();
               return false;
              }
-             if(!(key_val in digits)){
+             if(!(paytm_val % 1)=== 0){
                   event.preventDefault();
                   return false;
               } 
@@ -594,22 +594,13 @@ const defaultFormat = /(\d{1,4})/g;
               event.preventDefault();
               return false;
              }
-             if(!(key_val in digits)){
+             if(!(otp_val % 1)=== 0){
                   event.preventDefault();
                   return false;
               } 
                  
       }
   }
-  
- function isInteger(event){
-  let card_no = document.getElementById("card_no").value;
-  if(!(card_no % 1)=== 0){
-      event.preventDefault();
-      return false;
-  }
- }
-  
     function Handlefocus(event){
       var parent = event.target.parentElement;
       // console.log(event.target.parentElement);
