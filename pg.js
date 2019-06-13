@@ -312,7 +312,7 @@ var rcvjson =
       editRef.onclick = function(){
         paytmwrapper.style.display="block";
         paytmOTPwrapper.style.display="none";
-        // document.getElementById('otp').value="";
+        document.getElementById('otp').value="";
         document.getElementById('pay').focus();
       }
       var walletBallanceBackRef = document.getElementById('walletBalanceBack');
@@ -1269,7 +1269,7 @@ generateOTPbutton_ref.onclick = function(event){
     paytmOTPwrapper.style.display="block";
     document.getElementById('otp').focus();
     document.getElementById('mobnoShow').innerHTML = mob_no;
-    document.getElementById('pay').value ="";
+    // document.getElementById('pay').value ="";
   }
   
 }
