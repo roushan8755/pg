@@ -523,7 +523,7 @@ const defaultFormat = /(\d{1,4})/g;
       let name = event.target.name;
       let key_val = event.key;
       // let key_val = event.which;
-      // console.log(key_val);
+      console.log(key_val);
       let digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
       let namepattern = new RegExp( "[a-zA-Z ]");
   
@@ -1302,3 +1302,23 @@ payOtherOptionsbuttonRdef.onclick = function(){
   main_pageShow.style.display ="block";
   payotherOptionWrapper.style.display="none";
 } 
+
+$(document).ready(function(){
+  $('#card_no').on('keypress', function(event){
+    let key_val = event.key;
+      // let key_val = event.which;
+      // console.log(key_val);
+      let digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+              let card_no = $("#card_no").val();
+              if(card_no.length >= 19){
+                  event.preventDefault();
+                  return false;
+              }
+              if(!(key_val in digits)){
+                  event.preventDefault();
+                  return false;
+              }
+              
+  });
+
+});

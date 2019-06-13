@@ -6,6 +6,8 @@
     <title>Payment options</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='pg.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+   
 </head>
 <body>    
     <div id ="main-page">
@@ -45,7 +47,7 @@
       <div class="credit-container">
             <div class="credit-credential">
                  <div class="input-field">
-                     <input type="tel" class="inp" name="cardNo" id="card_no" onfocus ="Handlefocus(event);" onblur="Handleblur(event);" onkeypress="Handlekey(event);"  tabindex="1" maxlength="20" pattern="[0-9]*" inputmode="numeric" />
+                     <input type="tel" class="inp" name="cardNo" id="card_no" onfocus ="Handlefocus(event);" onblur="Handleblur(event);"  tabindex="1" maxlength="20"  />
                         <label  id="label">card no</label>
                             <span id="errormsg" class="erstar" style="color:red"></span>
                  </div> 
@@ -57,17 +59,17 @@
                </div>
                 <div class="input-fields">
                    <div class="monthfield">
-                      <input class= "input-fields"  type="tel" name="month"  autocomplete="off" id="mm" onfocus ="Handlefocus(event);" onblur="Handleblur(event);" tabindex="3"onkeypress="Handlekey(event);" maxlength="2" pattern="[0-9]*" inputmode="numeric" />
+                      <input class= "input-fields"  type="tel" name="month"  autocomplete="off" id="mm" onfocus ="Handlefocus(event);" onblur="Handleblur(event);" tabindex="3"onkeypress="Handlekey(event);" maxlength="2"  />
                             <label id ="label">MM</label>
                                <span id="errormsg" class="erstar" style="color:red"></span>
                    </div>    
                    <div class="yearfield">
-                       <input class= "input-fields" type="tel" name="year" autocomplete="off" id="yyyy" onfocus= "Handlefocus(event)" onblur="Handleblur(event);" tabindex="4"onkeypress="Handlekey(event);" maxlength="4" pattern="[0-9]*" inputmode="numeric"/>
+                       <input class= "input-fields" type="tel" name="year" autocomplete="off" id="yyyy" onfocus= "Handlefocus(event)" onblur="Handleblur(event);" tabindex="4"onkeypress="Handlekey(event);" maxlength="4" />
                            <label id ="label">YYYY</label>
                               <span id="errormsg" class="erstar"style="color:red"></span>
                    </div>   
                    <div class="cvvfield">
-                       <input class= "input-fields" type="password" name="cvv" autocomplete="off" id="cvvf" onfocus=" Handlefocus(event);" onblur="Handleblur(event);" tabindex="5"onkeypress="Handlekey(event);" maxlength="3" pattern="[0-9]*" inputmode="numeric"/>
+                       <input class= "input-fields" type="password" name="cvv" autocomplete="off" id="cvvf" onfocus=" Handlefocus(event);" onblur="Handleblur(event);" tabindex="5"onkeypress="Handlekey(event);" maxlength="3" />
                             <label id ="label">CVV</label>
                             <span class="cvv-sprite"></span></input>
                             <span id="errormsg" class="erstar" style="color:red">
@@ -148,7 +150,7 @@
            <div class="paytm-container" id="pc">
                <div class="content">
                <div class="paytm-input" id="inp">
-                  <input class="paytm" type="tel" id="pay" name="PAYTM"  onfocus="Handlefocus(event);" onblur="Handleblur(event);"onkeypress="Handlekey(event);"autocomplete="off" maxlength="10" pattern="[0-9]*" inputmode="numeric">
+                  <input class="paytm" type="tel" id="pay" name="PAYTM"  onfocus="Handlefocus(event);" onblur="Handleblur(event);"onkeypress="Handlekey(event);"autocomplete="off" maxlength="10" >
                   <label id ="label">Enter mobile no</label>
                   <span id="errormsg" class="erstar" style="color:red"></span>
                </div>
@@ -181,7 +183,7 @@
          <div class="paytm-container" id="pc">
              <div class="contents">
              <div class="paytm-input" id ="inp">
-                <input class="paytm" type="password" id="otp" name="PAYTMOTP"  onfocus="Handlefocus(event);" onblur="Handleblur(event);"onkeypress="Handlekey(event);" autocomplete="off" mxlength="6" pattern="[0-9]*" inputmode="numeric">
+                <input class="paytm" type="password" id="otp" name="PAYTMOTP"  onfocus="Handlefocus(event);" onblur="Handleblur(event);"onkeypress="Handlekey(event);" autocomplete="off" mxlength="6" >
                 <label id ="label">Enter otp</label>
                 <label id ="resend">Resend</label>
                 <span id="errormsg" class="erstar" style="color:red"></span>
@@ -290,6 +292,7 @@
          </div>
          <button class="proceed-to" id ="payOtherOptionsbutton">PAY &#8377;   USING OTHER OPTIONS</button> 
    </div>  
-          <script src='pg.js'></script>      
+          <script src='pg.js'></script> 
+              
 </body>
 </html>
