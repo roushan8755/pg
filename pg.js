@@ -533,14 +533,10 @@ const defaultFormat = /(\d{1,4})/g;
                   event.preventDefault();
                   return false;
               }
-              if(!((key_val % 1)=== 0)){
+              if(!(key_val in digits)){
                   event.preventDefault();
                   return false;
-              }
-              // if(!(key_val in digits)){
-              //     event.preventDefault();
-              //     return false;
-              // } 
+              } 
               break;
           case "CardName":
               if (!(namepattern.test(key_val))){
@@ -606,7 +602,13 @@ const defaultFormat = /(\d{1,4})/g;
       }
   }
   
- 
+ function isInteger(event){
+  let card_no = document.getElementById("card_no").value;
+  if(!(card_no % 1)=== 0){
+      event.preventDefault();
+      return false;
+  }
+ }
   
     function Handlefocus(event){
       var parent = event.target.parentElement;
