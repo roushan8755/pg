@@ -539,7 +539,8 @@ const defaultFormat = /(\d{1,4})/g;
                   return false;
               }
               if((card_no % 1) === 0){
-                  return true;
+                  event.preventDefault();
+                  return false;
               }
               break;
           case "CardName":
