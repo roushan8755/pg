@@ -524,7 +524,7 @@ const defaultFormat = /(\d{1,4})/g;
       let key_val = event.key;
       // let key_val = event.which;
       // console.log(key_val);
-      // let digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+      let digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
       let namepattern = new RegExp( "[a-zA-Z ]");
       switch(name){
           case "cardNo":
@@ -533,7 +533,7 @@ const defaultFormat = /(\d{1,4})/g;
                   event.preventDefault();
                   return false;
               }
-              if(!( card_no_val % 1)=== 0){
+              if(!(key_val in digits)){
                   event.preventDefault();
                   return false;
               } 
@@ -550,7 +550,7 @@ const defaultFormat = /(\d{1,4})/g;
                   event.preventDefault();
                   return false;
               }
-              if(!(card_mon_val % 1)=== 0){
+              if(!(key_val in digits)){
                   event.preventDefault();
                   return false;
               }
@@ -561,7 +561,7 @@ const defaultFormat = /(\d{1,4})/g;
                   event.preventDefault();
                   return false;
               }
-              if(!(card_year_val % 1)=== 0){
+              if(!(key_val in digits)){
                   event.preventDefault();
                   return false;
               }
@@ -572,7 +572,7 @@ const defaultFormat = /(\d{1,4})/g;
                   event.preventDefault();
                   return false;
               }
-              if(!(card_cvv_val % 1)=== 0){
+              if(!(key_val in digits)){
                   event.preventDefault();
                   return false;
               }
@@ -583,7 +583,7 @@ const defaultFormat = /(\d{1,4})/g;
               event.preventDefault();
               return false;
              }
-             if(!(paytm_val % 1)=== 0){
+             if(!(key_val in digits)){
                   event.preventDefault();
                   return false;
               } 
@@ -594,7 +594,7 @@ const defaultFormat = /(\d{1,4})/g;
               event.preventDefault();
               return false;
              }
-             if(!(otp_val % 1)=== 0){
+             if(!(key_val in digits)){
                   event.preventDefault();
                   return false;
               } 
