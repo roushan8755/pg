@@ -47,13 +47,13 @@
       <div class="credit-container">
             <div class="credit-credential">
                  <div class="input-field">
-                     <input type="tel" class="inp" name="cardNo" id="card_no" onfocus ="Handlefocus(event);" onblur="Handleblur(event);"  tabindex="1" maxlength="20"  />
+                     <input type="tel" class="inp" name="cardNo" id="card_no" onfocus ="Handlefocus(event);" onblur="Handleblur(event);" onkeypress=" Handlekey(event);" tabindex="1" maxlength="20"  />
                         <label  id="label">card no</label>
                             <span id="errormsg" class="erstar" style="color:red"></span>
                  </div> 
                             <span id ="cc_spritelogo" class="credit-sprite"></span>
                <div class="input-field">
-                    <input type="text" class="inp" name="CardName" id="name" autocomplete="off" onfocus ="Handlefocus(event);" onblur="Handleblur(event);"onkeypress=" Handlekey(event);"  tabindex="2"/>
+                    <input type="text" class="inp" name="CardName" id="name" autocomplete="off" onfocus ="Handlefocus(event);" onblur="Handleblur(event);"onkeypress=" Handlekey(event);"  tabindex="2" maxlength="20"/>
                         <label id="label">Name of card holder</label>
                             <span id="errormsg" class="erstar" style="color:red"></span>
                </div>
