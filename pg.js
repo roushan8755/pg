@@ -526,10 +526,10 @@ const defaultFormat = /(\d{1,4})/g;
       // console.log(key_val);
       let digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
       let namepattern = new RegExp( "[a-zA-Z ]");
-  
       switch(name){
           case "cardNo":
-              let card_no = document.getElementById("card_no").value;
+           let card_no = document.getElementById("card_no").value;
+            if((key_val % 1)=== 0){  
               if(card_no.length >= 19){
                   event.preventDefault();
                   return false;
@@ -538,10 +538,7 @@ const defaultFormat = /(\d{1,4})/g;
                   event.preventDefault();
                   return false;
               }
-              if((card_no % 1) === 0){
-                  event.preventDefault();
-                  return false;
-              }
+            } 
               break;
           case "CardName":
               if (!(namepattern.test(key_val))){
