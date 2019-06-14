@@ -475,7 +475,7 @@ const defaultFormat = /(\d{1,4})/g;
            let card_no_val = document.getElementById("card_no").value; 
               if( card_no_val.length >= 19){
                   event.preventDefault();
-                  return true;
+                  return false;
               }
               if(!(key_val in digits)){
                   event.preventDefault();
