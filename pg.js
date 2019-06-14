@@ -158,16 +158,6 @@ var rcvjson =
       }
     }
     nb_bank_all.innerHTML = html_to_nball_append;
-
-    // var upi = document.getElementById('upi');
-   
-    // var paytm = document.getElementById('paytm');
-      // upi.onclick = function(){
-      //    upi_wrapperShow.style.display = "block";
-      //    main_pageShow.style.display ="none";
-      // }
-
-
       var main_pageShow = document.getElementById('main-page');
       // var upi_wrapperShow = document.getElementById('upi-wrapper');
       var credit_wrapperShow = document.getElementById('credit_wrapper');
@@ -199,12 +189,7 @@ var rcvjson =
      var paytmwrapper = document.getElementById('other_wallets');
      var walletBalanceModal  = document.getElementById('walletShowBalance');
      var payotherOptionWrapper = document.getElementById('PayOtherWrapper'); 
-      
-      // var pnb_rowRef = document.getElementsByClassName("pnb-row");
-     
-      // var paytmGo = document.getElementById('gopaytm');
-      // var paytmBack = document.getElementById('walletshowBack');
-     
+       
        credit.onclick = function(){
         credit_wrapperShow.style.display ="block";
          main_pageShow.style.display ="none";
@@ -231,37 +216,6 @@ var rcvjson =
         }
       }
 
-    //  function EnterMobileno(){
-    //   var mo_no= document.getElementById('pay').value;
-    //   var otpPage = document.getElementById('paytmOTP'); 
-    //   var wallet_Show = document.getElementById('paytm_content');
-    //   var inputBorder = document.getElementById('pay');
-    //   var errmsg = document.getElementById('errmsg');
-    //   if(mo_no===""||mo_no===null||mo_no===undefined){
-    //     inputBorder.style.borderBottom="2px solid red";
-    //     errmsg.innerHTML=  "required";
-
-    //   }
-    //   else if(mo_no.length< 10){
-    //     inputBorder.style.borderBottom="2px solid red";
-    //     errmsg.innerHTML=  "required";
-           
-    //   }
-    //   else{
-    //     wallet_Show.style.display="none";
-    //     otpPage.style.display="block";
-    //   }
-     
-      // alert('hi');
-    // }
-      // upiback.onclick= function(){
-      //    main_pageShow.style.display = "block";
-      //    upi_wrapperShow.style.display = "none";
-      //    var upiborder = document.getElementById('upi_input');
-      //    var error_star = document.getElementsByClassName('erstar')[0];
-      //    error_star.innerHTML="";
-      //    upiborder.style.borderBottom="2px solid #ddd";
-      // }
       creditBack.onclick= function(){
         main_pageShow.style.display = "block";
         credit_wrapperShow.style.display ="none";
@@ -327,17 +281,7 @@ var rcvjson =
         walletBalanceModal.style.display="block";
         payotherOptionWrapper.style.display="none";
       }
-    //  paytmGo.onclick = function(){
-    //   wallet_paytm_wrappershow.style.display="block";
-    //   wallet_wrapperShow.style.display="none";
-      
-    //   alert('hi');
-    //  }
-    //  paytmBack.onclick = function(){
-    //    wallet_wrapperShow.style.display="block";
-    //    wallet_paytm_wrappershow.style.display="none";
-    //  } 
-    
+   
 
 // cc validation 
 
@@ -644,12 +588,6 @@ const defaultFormat = /(\d{1,4})/g;
                  parent.children.errormsg.innerHTML="";
              
              break;
-          //  case "vpa":
-          //         parent.children.label.className="activevpa";
-          //         parent.children.vpa.style="color:#444";
-          //         parent.children.vpa.style.borderBottom ="2px solid #007bb9";
-          //         parent.children.errormsg.innerHTML="";
-          //    break;
           case "PAYTM":
                  parent.children.label.className="activeinp";
                  parent.children.PAYTM.style="color:#444";
@@ -859,42 +797,6 @@ const defaultFormat = /(\d{1,4})/g;
                           parent.children.errormsg.innerHTML = "";
                           num_val_flag = true;
                       }
-                     
-                      // if(isValid){
-                      //     switch(ccinfoprovider){
-                      //        case "visa_cc":
-                      //              cc_sprite_div.className = '';
-                      //              cc_sprite_div.classList.add("credit-sprite");
-                      //              cc_sprite_div.classList.add("visa");
-  
-                      //              break;
-                      //              case "mast_cc":
-                      //              cc_sprite_div.className = '';
-                      //              cc_sprite_div.classList.add("credit-sprite");
-                      //              cc_sprite_div.classList.add("master");
-                      //              break;
-                      //              case "amex_cc":
-                      //              cc_sprite_div.className = '';
-                      //              cc_sprite_div.classList.add("credit-sprite");
-                      //              cc_sprite_div.classList.add("amex");
-                      //              break;
-                      //              case "rupay_dc":
-                      //              cc_sprite_div.className = '';
-                      //              cc_sprite_div.classList.add("credit-sprite");
-                      //              cc_sprite_div.classList.add("rupay");
-                      //              break;
-                      //              default:
-                      //              cc_sprite_div.className = '';
-                      //              cc_sprite_div.classList.add("credit-sprite");
-                      //              break;
-                      //     }
-                      // }
-  
-                      // else{
-                      //     cc_sprite_div.className = '';
-                      //     cc_sprite_div.classList.add("credit-sprite");
-                      //     cc_sprite_div.classList.add("unknown");
-                      // }
                   
                   break;
               case "CardName":
@@ -1073,23 +975,7 @@ const defaultFormat = /(\d{1,4})/g;
                          parent.children.PAYTMOTP.style.borderBottom="2px solid #ddd";
                          parent.children.errormsg.innerHTML = "";
                         }
-               break; 
-                // case "vpa":
-                //      let val_vpa = event.target.value;
-                //      if(val_vpa.length < 8){
-                //      parent.children.errormsg.innerHTML = "Invalid";
-                //      parent.children.label.className = "active_label_notvalid";
-                //      parent.children.vpa.style="color:red";
-                //      parent.children.vpa.style.borderBottom="2px solid red";
-                //      }
-                //      else{
-                //      parent.children.label.className = "activelabel";
-                //      parent.children.vpa.style.borderBottom="2px solid #ddd";
-                //      parent.children.errormsg.innerHTML = "";
-                //       } 
-
-                break;
-               
+               break;    
          }
      }
      else{
