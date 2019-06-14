@@ -619,13 +619,13 @@ html{
  cursor: pointer;
 }
 .down-arrow .arrow1{
-	width: 14px;
-    height: 2.5px;
+    width: 14px;
+    height: 2px;
     background: #757575;
     position: absolute;
-    top: 7px;
-    left: 69px;
-    transform: rotate(-50deg);
+    top: 6px;
+    left: 70px;
+    transform: rotate(-45deg);
 }
 .down-arrow .arrow2{
 	width: 14px;
@@ -634,7 +634,7 @@ html{
     position: absolute;
     top: 7px;
     left: 60px;
-    transform: rotate(-130deg);
+    transform: rotate(-141deg);
 }
 /*.ty-slide.ty-transform-support {
     height: 100%;
