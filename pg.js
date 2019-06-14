@@ -1014,11 +1014,6 @@ const defaultFormat = /(\d{1,4})/g;
                 parent.children.PAYTMOTP.style.borderBottom ="2px solid red";          
                 // parent.children.errormsg.innerHTML=  "*";          
              break;     
-          //  case "vpa":
-          //       parent.children.vpa.style.borderBottom ="2px solid red";          
-          //       parent.children.errormsg.innerHTML=  "*";
-          //  break; 
-          
           }
      }    
      
@@ -1185,22 +1180,3 @@ payOtherOptionsbuttonRdef.onclick = function(){
   document.getElementById('pay').value= "";
   document.getElementById('otp').value="";
 } 
-
-// $(document).ready(function(){
-//   $('#card_no').on('oninput', function(event){
-//     let key_val = event.key;
-//       console.log(key_val);
-//       let digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-//               let card_no = $("#card_no").val();
-//               if(card_no.length >= 19){
-//                   event.preventDefault();
-//                   return false;
-//               }
-//               if(!(key_val in digits)){
-//                   event.preventDefault();
-//                   return false;
-//               }
-              
-//   });
-
-// });
