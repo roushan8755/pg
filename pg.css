@@ -306,14 +306,14 @@ html{
 .input-field .activeinp{
 	position:absolute;
 	/*top:10px;*/
-	top:12px;
+	top:10px;
 	left:0;
 	font-size:12px;
 	color:#007bb9;
 }
 .input-fields .activeinp{
 	position:absolute;
-	top:9px;
+	top:7px;
 	left:0;
 	font-size:12px;
 	color:#007bb9;
@@ -348,23 +348,23 @@ html{
 .input-field .activelabel {
 	position:absolute;
     /*top: 8px;*/
-    top:12px;
+    top:10px;
     font-size: 12px;
     color: #202020;    
 }
 .input-field .active_label_notvalid {
 	position:absolute;
-    top: 11px;
+    top: 10px;
     font-size: 12px;
     color: red;    
 }
 .input-fields .activelabel {
-    top: 9px;
+    top: 7px;
     font-size: 12px;
     color: #202020;    
 }
 .input-fields .active_label_notvalid {
-    top: 9px;
+    top: 7px;
     font-size: 12px;
     color: red;    
 }
@@ -995,17 +995,17 @@ input {
     left:100px
 } */
  .paytm-input .activeinp{
-    top:10px;
+    top:8px;
 	left:0;
 	color:#202020;
 }
 .active_paytm_label{
-    top:10px;
+    top:8px;
     color:#202020;
     font-size:15px;
 }
 .active_paytm_label_not_valid{
-    top:10px;
+    top:8px;
     left:0;
     color:red;
 }

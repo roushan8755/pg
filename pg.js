@@ -1244,7 +1244,6 @@ else{
 console.log(selectBankId);
  }
 }
-
 var generateOTPbutton_ref = document.getElementById('topaytm');
 generateOTPbutton_ref.onclick = function(event){
   var mob_no = document.getElementById('pay').value;
@@ -1297,6 +1296,8 @@ payOtherOptionsbuttonRdef = document.getElementById('payOtherOptionsbutton');
 payOtherOptionsbuttonRdef.onclick = function(){
   main_pageShow.style.display ="block";
   payotherOptionWrapper.style.display="none";
+  document.getElementById('pay').value= "";
+  document.getElementById('otp').value="";
 } 
 
 // $(document).ready(function(){
