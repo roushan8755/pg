@@ -478,7 +478,7 @@ html{
 	display: flex;
     width: 100%;
     /* margin-top:170px; */
-    margin: 50% 0 auto;
+    margin-top: 50% ;
     box-sizing: border-box;
     padding-bottom: 10px;
     justify-content: center;
@@ -833,7 +833,7 @@ input {
     width: 100%;
     box-sizing: border-box;
     display: flex;
-    margin: 38% 0 auto;
+    margin-top: 38%;
     justify-content: center;
     align-items: center;
     padding-bottom: 10px;
@@ -911,7 +911,7 @@ input {
     width: 100%;
     box-sizing: border-box;
     display: flex;
-    margin: 88% 0 auto;
+    margin-top: 88%;
     justify-content: center;
     align-items: center;
     padding-bottom: 10px;
@@ -932,7 +932,7 @@ input {
     width: 100%;
     box-sizing: border-box;
     display: flex;
-    margin: 70% 0 auto;
+    margin-top: 70%;
     justify-content: center;
     align-items: center;
     padding-bottom: 10px;
