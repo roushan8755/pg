@@ -1183,6 +1183,7 @@ payOtherOptionsbuttonRdef.onclick = function(){
 $(function(){
    $('#card_no').on('input',function(event){
          var keyval = this.value;
+         console.log(keyval);
          let digits = [0,1,2,3,4,5,6,7,8,9];
          if(!(keyval in digits)){
                event.preventDefault();
