@@ -1147,8 +1147,8 @@ generateOTPbutton_ref.onclick = function(event){
   }
   
 }
-var OTPbutton_REF = document.getElementById('toOTP');
-OTPbutton_REF.onclick = function(event){
+var SubmitOTPbutton_REF = document.getElementById('toOTP');
+SubmitOTPbutton_REF.onclick = function(event){
   var otp_val = document.getElementById('otp').value;
   var otp_required = event.target.parentElement.children.pc.children[0].children.inp.children;
   if(otp_val===''||otp_val===null||otp_val===undefined){
