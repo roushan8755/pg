@@ -458,17 +458,17 @@ const defaultFormat = /(\d{1,4})/g;
       let digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
       let namepattern = new RegExp( "[a-zA-Z ]");
       switch(name){
-          case "cardNo":
-           let card_no_val = document.getElementById("card_no").value; 
-              if( card_no_val.length >= 19){
-                  event.preventDefault();
-                  return false;
-              }
-              if(!(key_val in digits)){
-                  event.preventDefault();
-                  return false;
-              } 
-              break;
+          // case "cardNo":
+          //  let card_no_val = document.getElementById("card_no").value; 
+          //     if( card_no_val.length >= 19){
+          //         event.preventDefault();
+          //         return false;
+          //     }
+          //     if(!(key_val in digits)){
+          //         event.preventDefault();
+          //         return false;
+          //     } 
+          //     break;
           case "CardName":
               if (!(namepattern.test(key_val))){
                   event.preventDefault();
