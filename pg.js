@@ -534,7 +534,7 @@ const defaultFormat = /(\d{1,4})/g;
   }
   function numberMobile(event){
     let digits = [0,1,2,3,4,5,6,7,8,9];
-    if(!(event.target.value in digits)){
+    if(!(event.target.value)% 1 === 0){
       event.preventDefault();
       return false;
     }
