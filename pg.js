@@ -269,18 +269,7 @@ var rcvjson =
         document.getElementById('otp').value="";
         document.getElementById('pay').focus();
       }
-      var walletBallanceBackRef = document.getElementById('walletBalanceBack');
-      walletBallanceBackRef.onclick = function(){
-        walletBalanceModal.style.display="none";
-        paytmOTPwrapper.style.display="block";
-        document.getElementById('otp').focus();
-      }
      
-      var payotherBack = document.getElementById('payotherBack');
-      payotherBack.onclick = function(){
-        walletBalanceModal.style.display="block";
-        payotherOptionWrapper.style.display="none";
-      }
    
 
 // cc validation 
@@ -531,11 +520,11 @@ const defaultFormat = /(\d{1,4})/g;
               } 
              break;  
             case"PAYTMOTP":
-            let otp_val = document.getElementById('otp').value;
-            if(otp_val.length >=6){
-              event.preventDefault();
-              return false;
-             }
+            // let otp_val = document.getElementById('otp').value;
+            // if(otp_val.length >=6){
+            //   event.preventDefault();
+            //   return false;
+            //  }
              if(!(key_val in digits)){
                   event.preventDefault();
                   return false;
@@ -543,6 +532,19 @@ const defaultFormat = /(\d{1,4})/g;
                  
       }
   }
+
+  function numberMobile(event){
+    // e.target.value = e.target.value.replace(/[^\d]/g,'');
+    // return false;
+     switch(event.target.name){
+            case "cardNo" :
+            let card_no_val = document.getElementById("card_no").value;
+                card_no_val.replace(/[^\d]/g,'');
+                return false;
+            break;
+     }
+
+}
     function Handlefocus(event){
       var parent = event.target.parentElement;
       // console.log(event.target.parentElement);
@@ -1155,10 +1157,10 @@ SubmitOTPbutton_REF.onclick = function(event){
     otp_required.errormsg.innerHTML="required";
     otp_required.otp.style.borderBottom="2px solid red";
   }
-  else if(otp_val.length < 6){
-    otp_required.errormsg.innerHTML="invalid";
-    otp_required.otp.style.borderBottom="2px solid red";
-  }
+  // else if(otp_val.length < 6){
+  //   otp_required.errormsg.innerHTML="invalid";
+  //   otp_required.otp.style.borderBottom="2px solid red";
+  // }
   else{
     walletBalanceModal.style.display="block";
     paytmOTPwrapper.style.display="none";
@@ -1166,15 +1168,34 @@ SubmitOTPbutton_REF.onclick = function(event){
 
 }
 
-var confirm = document.getElementById('confirm');
-confirm.onclick = function(){
-  payotherOptionWrapper.style.display="block";
-  walletBalanceModal.style.display="none";
-}
-payOtherOptionsbuttonRdef = document.getElementById('payOtherOptionsbutton');
-payOtherOptionsbuttonRdef.onclick = function(){
-  main_pageShow.style.display ="block";
-  payotherOptionWrapper.style.display="none";
-  document.getElementById('pay').value= "";
-  document.getElementById('otp').value="";
-} 
+// for resend otp
+// var resend = document.getElementById('resend');
+
+
+// following code for showing SUFFICIENT and INSUFFICIENT balance 
+
+// var confirm = document.getElementById('confirm');
+// confirm.onclick = function(){
+//   payotherOptionWrapper.style.display="block";
+//   walletBalanceModal.style.display="none";
+// }
+// payOtherOptionsbuttonRdef = document.getElementById('payOtherOptionsbutton');
+// payOtherOptionsbuttonRdef.onclick = function(){
+//   main_pageShow.style.display ="block";
+//   payotherOptionWrapper.style.display="none";
+//   document.getElementById('pay').value= "";
+//   document.getElementById('otp').value="";
+// } 
+
+// var walletBallanceBackRef = document.getElementById('walletBalanceBack');
+// walletBallanceBackRef.onclick = function(){
+//   walletBalanceModal.style.display="none";
+//   paytmOTPwrapper.style.display="block";
+//   document.getElementById('otp').focus();
+// }
+
+// var payotherBack = document.getElementById('payotherBack');
+// payotherBack.onclick = function(){
+//   walletBalanceModal.style.display="block";
+//   payotherOptionWrapper.style.display="none";
+// }

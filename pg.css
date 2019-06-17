@@ -1145,3 +1145,6 @@ input {
     box-sizing: border-box;
     display:none;
  }
+ .secureHide{
+     display:none;
+ }
