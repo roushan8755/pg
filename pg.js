@@ -458,17 +458,17 @@ const defaultFormat = /(\d{1,4})/g;
       let digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
       let namepattern = new RegExp( "[a-zA-Z ]");
       switch(name){
-          // case "cardNo":
-          //  let card_no_val = document.getElementById("card_no").value; 
-          //     if( card_no_val.length >= 19){
-          //         event.preventDefault();
-          //         return false;
-          //     }
-          //     if(!(key_val in digits)){
-          //         event.preventDefault();
-          //         return false;
-          //     } 
-          //     break;
+          case "cardNo":
+           let card_no_val = document.getElementById("card_no").value; 
+              if( card_no_val.length >= 19){
+                  event.preventDefault();
+                  return false;
+              }
+              if(!(key_val in digits)){
+                  event.preventDefault();
+                  return false;
+              } 
+              break;
           case "CardName":
               if (!(namepattern.test(key_val))){
                   event.preventDefault();
@@ -531,13 +531,6 @@ const defaultFormat = /(\d{1,4})/g;
               } 
                  
       }
-  }
-  function numberMobile(event){
-    let digits = [0,1,2,3,4,5,6,7,8,9];
-    if(!(event.target.value)% 1 === 0){
-      event.preventDefault();
-      return false;
-    }
   }
     function Handlefocus(event){
       var parent = event.target.parentElement;
@@ -1155,10 +1148,10 @@ SubmitOTPbutton_REF.onclick = function(event){
   //   otp_required.errormsg.innerHTML="invalid";
   //   otp_required.otp.style.borderBottom="2px solid red";
   // }
-  else{
-    walletBalanceModal.style.display="block";
-    paytmOTPwrapper.style.display="none";
-  }
+  // else{
+  //   walletBalanceModal.style.display="block";
+  //   paytmOTPwrapper.style.display="none";
+  // }
 
 }
 
@@ -1193,3 +1186,68 @@ SubmitOTPbutton_REF.onclick = function(event){
 //   walletBalanceModal.style.display="block";
 //   payotherOptionWrapper.style.display="none";
 // }
+
+
+$.fn.blockInput = function (options) 
+{
+    // find inserted or removed characters
+    function findDelta(value, prevValue) 
+    {
+        var delta = '';
+
+        for (var i = 0; i < value.length; i++) {
+            var str = value.substr(0, i) + 
+                value.substr(i + value.length - prevValue.length);
+            
+            if (str === prevValue) delta = 
+                value.substr(i, value.length - prevValue.length);
+        }
+
+        return delta;
+    }
+
+    function isValidChar(c)
+    {
+        return new RegExp(options.regex).test(c);
+    }
+
+    function isValidString(str)
+    {
+        for (var i = 0; i < str.length; i++)
+        if (!isValidChar(str.substr(i, 1))) return false;
+
+        return true;
+    }
+
+    this.filter('input,textarea').on('input', function ()
+    {
+        var val = this.value,
+            lastVal = $(this).data('lastVal');
+
+        // get inserted chars
+        var inserted = findDelta(val, lastVal);
+        // get removed chars
+        var removed = findDelta(lastVal, val);
+        // determine if user pasted content
+        var pasted = inserted.length > 1 || (!inserted && !removed);
+
+        if (pasted)
+        {
+            if (!isValidString(val)) this.value = lastVal;
+        } 
+        else if (!removed)
+        {
+            if (!isValidChar(inserted)) this.value = lastVal;
+        }
+
+        // store current value as last value
+        $(this).data('lastVal', this.value);
+    }).on('focus', function ()
+    {
+        $(this).data('lastVal', this.value);
+    });
+
+    return this;
+};
+
+$('#card_no').blockInput({ regex: '[0-9A-Z]' });
