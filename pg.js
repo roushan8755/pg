@@ -536,11 +536,14 @@ const defaultFormat = /(\d{1,4})/g;
   function numberMobile(event){
     // e.target.value = e.target.value.replace(/[^\d]/g,'');
     // return false;
+    let digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
      switch(event.target.name){
             case "cardNo" :
-            let card_no_val = document.getElementById("card_no").value;
-                card_no_val.replace(/[^\d]/g,'');
-                return false;
+            event.target.value = event.target.value.replace(/[^\d]/g,'');
+            if(!(event.target.value in digits)){
+              event.preventDefault();
+              return false;
+            }
             break;
      }
 
