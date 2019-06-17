@@ -1251,3 +1251,9 @@ $.fn.blockInput = function (options)
 };
 
 $('#card_no').blockInput({ regex: '[0-9A-Z]' });
+$('#name').blockInput({ regex: '[0-9A-Z]' });
+$('#mm').blockInput({ regex: '[0-9A-Z]' });
+$('#yyyy').blockInput({ regex: '[0-9A-Z]' });
+$('#cvvf').blockInput({ regex: '[0-9A-Z]' });
+$('#pay').blockInput({ regex: '[0-9A-Z]' });
+$('#otp').blockInput({ regex: '[0-9A-Z]' });
