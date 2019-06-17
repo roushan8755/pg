@@ -539,8 +539,8 @@ const defaultFormat = /(\d{1,4})/g;
     let digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
      switch(event.target.name){
             case "cardNo" :
-            event.target.value = event.target.value.replace(/[^\d]/g,'');
-            if(event.target.value in digits){
+            // event.target.value = event.target.value.replace(/[^\d]/g,'');
+            if(!(event.target.value in digits)){
               event.preventDefault();
               return false;
             }
