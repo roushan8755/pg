@@ -1063,25 +1063,11 @@ const defaultFormat = /(\d{1,4})/g;
          selectRadioRef.className="selectedButton";
          selectRadiobuttonTicked = selectRadioRef;
    }      
-     var selectedBankId = event.target.parentElement.parentElement.getAttribute('id');
-     
-    //  console.log(selectedBankId);
-     if(selectedBankId!=null)
-     {
-        selectedBankids = selectedBankId;
-     }
-     var Allpnb = document.querySelectorAll('.pnb-row');
-  
       var borderglow_all = document.querySelectorAll(".pnb-row.borderglow"); 
-     Allpnb.forEach(function(el){
-    //   console.log(el.getAttribute('id'));
-      //  if(selectedBankids != (el.getAttribute('id'))){
             borderglow_all.forEach(function(item){
                item.classList.remove('borderglow');
                item.getElementsByClassName("tick")[0].style = "display:none";
            });  
-      //  } 
-   });
      
   }
   
