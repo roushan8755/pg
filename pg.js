@@ -950,18 +950,18 @@ const defaultFormat = /(\d{1,4})/g;
                              }
                     break; 
                     case "PAYTMOTP":
-                        let OTP_val = document.getElementById('otp').value;
-                        if(OTP_val.length < 6){
-                          parent.children.errormsg.innerHTML ="Enter valid OTP";
-                          parent.children.label.className="active_paytm_label_not_valid";
-                          parent.children.PAYTMOTP.style="color:red";
-                          parent.children.PAYTMOTP.style.borderBottom="2px solid red";
-                        }
-                        else{
+                        // let OTP_val = document.getElementById('otp').value;
+                        // if(OTP_val.length < 6){
+                        //   parent.children.errormsg.innerHTML ="Enter valid OTP";
+                        //   parent.children.label.className="active_paytm_label_not_valid";
+                        //   parent.children.PAYTMOTP.style="color:red";
+                        //   parent.children.PAYTMOTP.style.borderBottom="2px solid red";
+                        // }
+                        // else{
                          parent.children.label.className="active_paytm_label";
                          parent.children.PAYTMOTP.style.borderBottom="2px solid #ddd";
                          parent.children.errormsg.innerHTML = "";
-                        }
+                        // }
                break;    
          }
      }
