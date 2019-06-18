@@ -1219,7 +1219,7 @@ $.fn.blockInput = function (options)
         return true;
     }
 
-    this.filter('input,textarea').on('input', function ()
+    this.filter('input').on('input', function ()
     {
         var val = this.value,
             lastVal = $(this).data('lastVal');
