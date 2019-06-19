@@ -1237,10 +1237,10 @@ $.fn.blockInput = function (options)
 };
 
 // $('#card_no').blockInput({ regex: '[0-9A-Z]' });
-$('#card_no').blockInput({ regex: '[0-9]' });
+$('#card_no').blockInput({ regex: '[0-9A-Z]' });
 $('#name').blockInput({ regex: '[a-zA-Z_ ]' });
-$('#mm').blockInput({ regex: '[0-9]' });
-$('#yyyy').blockInput({ regex: '[0-9]' });
-$('#cvvf').blockInput({ regex: '[0-9]' });
-$('#pay').blockInput({ regex: '[0-9]' });
-$('#otp').blockInput({ regex: '[0-9]' });
+$('#mm').blockInput({ regex: '[0-9A-Z]' });
+$('#yyyy').blockInput({ regex: '[0-9A-Z]' });
+$('#cvvf').blockInput({ regex: '[0-9A-Z]' });
+$('#pay').blockInput({ regex: '[0-9A-Z]' });
+$('#otp').blockInput({ regex: '[0-9A-Z]' });
