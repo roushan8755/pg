@@ -939,6 +939,9 @@ const defaultFormat = /(\d{1,4})/g;
   function popularBank(popularbank,event,key){
     let anotherBank_rendered_Ref = document.getElementsByClassName('another-bank-caption')[0];
   // var tickDivisionRef = document.getElementsByClassName('tick')[0];
+  let proceedBank = document.getElementsByClassName('Bankproceed')[0];
+  proceedBank.style.background ="#F67812";
+  proceedBank.style.color ="#FFF";
     anotherBank_rendered_Ref.innerHTML=popularbank;
     selectNetBank = popularbank;
     selectBankId = key;
@@ -969,7 +972,9 @@ const defaultFormat = /(\d{1,4})/g;
   function SelectBank(bank,event,key){
    let anotherBank_rendered_Ref = document.getElementsByClassName('another-bank-caption')[0];
    let ty_slide =  document.getElementsByClassName('ty-slide')[0];
-     
+   let proceedBank = document.getElementsByClassName('Bankproceed')[0];
+   proceedBank.style.background ="#F67812";
+   proceedBank.style.color ="#FFF";
     ty_slide.style.transform = "translate(0%,100%)";
     anotherBank_rendered_Ref.innerHTML=bank;
     selectNetBank = bank;
@@ -1001,7 +1006,7 @@ const defaultFormat = /(\d{1,4})/g;
       for (i = 0; i < li.length; i++) {
        a = li[i].getElementsByClassName("bankname")[0];
        txtValue = a.textContent || a.innerText;
-       if (txtValue.toUpperCase().indexOf(filter) > -1) {
+       if (txtValue.toUpperCase().indexOf(filter) >=0) {
            li[i].style.display = "";
        } else {
            li[i].style.display = "none";
@@ -1165,3 +1170,8 @@ $('#yyyy').blockInput({ regex: '[0-9A-Z]' });
 $('#cvvf').blockInput({ regex: '[0-9A-Z]' });
 $('#pay').blockInput({ regex: '[0-9A-Z]' });
 $('#otp').blockInput({ regex: '[0-9A-Z]' });
+var mainpageBack = document.getElementById('mainpageBack');
+mainpageBack.onclick = function(){
+  window.history.back(-1);
+  // alert('hi');
+}
